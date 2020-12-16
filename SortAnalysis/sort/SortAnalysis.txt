@@ -1,0 +1,35 @@
+Philippe Lumpkin
+430
+Fall, 2020
+430: Algorithm Design and Analysis
+
+Implementation:
+Before the beginning of this program, my python experience was next to none.
+I will say that it is becoming one of my favorite languages along side java.
+For the most part everthing that i implemented did not have many errors if any on first run.
+
+
+Testing Expectations:
+Based off of the asymptotic times for both of the programs in general I would expect that merge would work faster at least on average,
+when compared to insertion. Between both programs I would think that Reverse would take the longest to process, then Random, and last Ordered.
+I would think that reverse would take the longest because it garuntees the most work since no numbers are in order. Random being next because
+there are a lot of different numbers that some may be in order. And ordered last, or quickest, becuase it would just need to process the entire
+list thru the program.
+
+Testing Observations:
+In terms of overall speed between insertion and merge, merge is running significantly faster than that of insertion. Which makes sense, as the running speed across the board for merge
+is O(n log n) vs that of insertion sort which is O(n) for ordered list and O(n^2) for the rest. When plotting insertion sort ordered was the quickest, random next, and then reverse was the longest.
+When plotting merge sort, ordered and reverse switch between being the shortest, and random always took the longest. There were a few data points that were faster than the previous entry that had less
+numbers to sort through. 
+
+Analysis:
+Based off of the results, my first expectation does hold true, in that merge does work faster on average when compared to that of insertion. The next expectation only holds true for insertion, that is, reverse
+takes the longest, then random, then ordered as the shortest. As for merge, this is a different story. Random took the longest overall, while it was a tie for shortest, between ordered and reverse. I am guessing
+it can process the list better due to the divide and conquer method that merge sort is using. So while reverse is backwards, it can quickly sort everything out still, atleast while compared to random. Another thing
+to note is that ordered for merge is actually slower than that of isertion. This is because when insertion processes an ordered list then its running time is only O(n) while for merge it is still O(n log n) for ordered
+meaning that it will take longer. 
+ 
+Take-Away:
+My main take away is that running times are really great indicators for how fast a program would run, which clearly makes since, but i have never really seen this played out before. Essentially, it is
+good to know running times for programs so that you can apply the best algorithm for your particular situation. If i knew that my lists would be very random, I would for sure implement merge sort
+over insertion sort. 

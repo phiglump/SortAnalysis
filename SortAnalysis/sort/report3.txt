@@ -1,0 +1,33 @@
+Philippe Lumpkin
+430
+Fall, 2020
+430: Algorithm Dessign and Analysis
+
+Implementation: 
+Using the same methods as before the sorting algorithms based off of the book are designed and created
+within Python 3 and in the school's linux servers.
+
+Testing Expectations: 
+Going into this i was not familiar with either of the three algorithms.(HeapSort, Quicksort Naive, and Quicksort Randomized)
+Based off of the research on heap sort i would imagine that the speeds would be similar to that of merge sort
+since it also runs in O(n log n) time. As for Quicksort Naive and Quicksort Randomized, they both seem to be great options for 
+sorting but it seems that under certain circumstances Naive Quicksort will take longer. It would seem that Quicksort Naive would
+take longer but i would assume it is not too much different based off of the code differences of itself and Quicksort Randomized. 
+
+Testing Observations:
+To begin, i see that heapsort essentially did on par in terms of timing along side that of merge sort as i predicted before. 
+I am fairly surprised with the results of QuickSort Naive. I had to make adjustments to my code in order to allow for the high
+amount of calls on itself when it cam to ordered and reveresed. It also took several seconds longer than that of QuickSort Randomized.
+When it came to the random data for the array, QuickSort Naive performed faster than that of QuickSort Randomized. It also seems that
+overall QuickSort Randomized, seems to be the fastest sorting algorithm, at least based off of my limited runs. 
+
+Analysis: 
+My prediction for heapsort was fairly spot on, but my assumption for quicksort was a fair bit off. This seems to be due to the fact
+that randomized pivot points are more likely to not choose already sorted data, and therefore save way more time when it comes to 
+partially or fully sorted arrays. As stated above, when the data got much closer to 10000 entries, QuickSort Naive started taking 
+several seconds, while QuickSort Randomized still never took a full second for any operation. 
+
+Take Away:
+Again, QuickSort Randomized seems to be the overall best sorting algorithm in terms of the time it takes to complete the operation.
+MergeSort is still a valid option as well as heap sort. Even QuickSort Naive isn't too bad of an option so long as the data is 
+fairly random in its current order. 
